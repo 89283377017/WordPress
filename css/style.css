@@ -9,11 +9,15 @@
     margin: 0 auto;
 }
 
+html{
+    font-family: 'Roboto', sans-serif;
+}
+
 
 /* Первая секция */
 .promo{
-    height: 850px; /*800px */
-    background: url("../img/feaderPromo.jpg") center center/cover no-repeat;
+    min-height: 800px; 
+    background: url("../img/headerPromo.jpg") center center/cover no-repeat;
     padding: 39px 0 62px 0;
 }
 
@@ -24,7 +28,6 @@
 
 .logo .logoText{
     color: #ffffff;
-    font-family: Roboto;
     font-size: 15px;
     font-weight: 500;
     text-transform: uppercase;
@@ -34,9 +37,8 @@
 
 .promo h1{
     color: #f9bf3b;
-    font-family: "Roboto - Black";
     font-size: 41px;
-    font-weight: 400;
+    font-weight: 900;
     text-transform: uppercase;
     text-align: center;
     margin-top: 53px;
@@ -44,9 +46,8 @@
 
 .simple .titleBig{
     color: #ffffff;
-    font-family: "Roboto - Black";
     font-size: 80px;
-    font-weight: 400;
+    font-weight: 900;
     text-transform: uppercase;
     text-align: center;
     margin-top: 51px;
@@ -54,9 +55,8 @@
 
 .promo h2.title{
     color: #f9bf3b;
-    font-family: "Roboto - Black";
     font-size: 41px;
-    font-weight: 400;
+    font-weight: 900;
     text-transform: uppercase;
     text-align: center;
     margin-top: 30px;
@@ -67,7 +67,6 @@
     font-size: 21px;
     font-weight: 300;
     line-height: 28px;
-    font-family: "Roboto Light";
     text-align: center;
     margin: 0 13px;
     margin-top: 23px;
@@ -75,7 +74,6 @@
 
 .promo .promoText span{
     color: #f9bf3b;
-    font-family: "Roboto - Bold";
     font-weight: 700;
 }
 
@@ -90,7 +88,6 @@
     background-image: linear-gradient(to top, #2798b9 0%, #3ab6da 100%);
     text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.22);
     color: #ffffff;
-    font-family: "Roboto Condensed";
     font-size: 21px;
     font-weight: 400;
     text-transform: uppercase;
@@ -100,9 +97,8 @@
 
 .promo .more .moreText{
     color: #ffffff;
-    font-family: "Roboto - Thin";
     font-size: 15px;
-    font-weight: 400;
+    font-weight: 100;
     text-transform: uppercase;
     text-align: center;
     margin-top: 73px;
@@ -121,21 +117,26 @@
 /* Вторая секция */
 
 .waiting{
-    height: 604px;
+    min-height: 604px;
     background-color: #efefef;
     padding: 85px 0 75px 0;
 }
 
-.waiting .waitingHeader{
+.waiting .waitingHeader,
+.finish .finishHeader{
     color: #252525;
-    font-family: Roboto;
     font-size: 30px;
     font-weight: 400;
     text-transform: uppercase;
     text-align: center;
 }
 
-.waiting .waitingHivider{
+.finish .finishHeader{
+    color: #fff;
+}
+
+.waiting .waitingHivider,
+.finish .finishHivider{
     margin: 0 auto;
     margin-top: 18px;
     width: 217px;
@@ -146,7 +147,6 @@
 .waiting .waitingSupheader{
     margin-top: 17px;
     color: #4a4a4a;
-    font-family: Roboto;
     font-size: 23px;
     font-weight: 400;
     text-align: center;
@@ -154,14 +154,13 @@
 
 .waiting .waitingWrapper{
     margin-top: 45px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .waiting .waitingWrapper .waitingItem{
-    display: inline-block;
     width: 342px;
-    vertical-align: top;
     text-align: center;
-    margin: 0 15px;
 }
 
 .waiting .waitingWrapper .waitingItem .waitingImg{
@@ -171,8 +170,186 @@
 .waiting .waitingWrapper .waitingItem .waitingDescr{
     margin-top: 33px;
     color: #4a4a4a;
-    font-family: Roboto;
     font-size: 15px;
     font-weight: 300;
     line-height: 21px;
+}
+
+/* Третяя секция */
+.optimisation{
+    height: 550px;
+    padding: 102px 0 107px 0;
+    position: relative;
+}
+
+.optimisation .optimisationHeader{
+    margin-left: 389px;
+    color: #299cbd;
+    font-size: 30px;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.optimisation .optimisationText{
+    margin-top: 25px;
+    margin-left: 389px;
+    color: #4a4a4a;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 27px;
+}
+
+.optimisation .optimisationText span{
+    font-weight: 700;
+}
+
+.optimisation .optimisationImg{
+    position: absolute;
+    width: 868px;
+    height: 502px;
+    left: -50px;
+    top: 48px;
+    z-index: -1;
+}
+
+/* Четвертая секция */
+.finish{
+    min-height: 447px;
+    padding-top: 86px;
+    padding-bottom: 79px;
+    background: url("../img/finishFon.jpg") center center/cover no-repeat;
+}
+
+.finish .wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+.finish .wrapper .wrapperRound{
+    margin: 0 auto;
+    margin-top: 41px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 115px;
+    height: 115px;
+    background-color: #b4e2ff;
+    border-radius: 100%;
+}
+
+.finish .wrapper .wrapperDesc{
+    width: 204px;
+    color: #efefef;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 20px;
+    text-align: center;
+    margin-top: 25px;
+}
+
+
+/* Пятая секция */
+.intensive{
+    min-height: 628px;
+    padding-top: 86px;
+    padding-bottom: 87px;
+    background-color: #efefef;
+}
+
+.intensive .intensiveIcon{
+    display: block;
+    margin: 0 auto;
+    width: 154px;
+}
+
+.intensive .intensiveText{
+    margin-top: 42px;
+    color: #252525;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 43px;
+    text-align: center;
+}
+
+.intensive .intensiveBtn{
+    display: block;
+    margin: 0 auto;
+    margin-top: 52px;
+    width: 313px;
+    height: 72px;
+    box-shadow: inset 0 0 0 rgba(0, 0, 0, 0.18);
+    border: 4px solid rgba(0, 0, 0, 0.11);
+    background-image: linear-gradient(to top, #2798b9 0%, #3ab6da 100%);
+    text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.22);
+    color: #ffffff;
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 24px;
+    text-transform: uppercase;
+    cursor: pointer;
+    outline: none;
+}
+
+
+/* Шестая сеция */
+
+.firstwebinar{
+    min-height: 515px;
+    padding-top: 89px;
+    padding-bottom: 64px;
+}
+
+.firstwebinar .firstwebinarImg{
+    display: block;
+    margin: 0 auto;
+    width: 342px;
+    height: 201px;
+}
+
+.firstwebinar .firstwebinarHeader{
+    margin-top: 37px;
+    text-align: center;
+    color: #252525;
+    font-size: 30px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.firstwebinar .firstwebinarFooter{
+    margin-top: 30px;
+    text-align: center;
+    color: #299cbd;
+    font-size: 36px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.firstwebinar .firstwebinarText{
+    padding-top: 25px;
+    text-align: center;
+    color: #4a4a4a;
+    font-size: 23px;
+    font-weight: 400;
+}
+
+
+/* Седьмая секция */
+.footer{
+    min-height: 166px;
+    background-color: #1a1a1a;
+    padding-top: 61px;
+    padding-bottom: 69px;
+}
+
+.footer .footerText{
+    text-align: center;
+    color: #888888;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 21px;
+}
+
+.footer .footerText a{
+    color: #888888;
 }
